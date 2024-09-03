@@ -5,9 +5,75 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: crimson;
+  text-transform: capitalize;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  background-color: #FFF;
+  width: 1000px;
+  margin: 200px auto;
+  padding: 30px;
+}
+.app .title {
+  padding: 10px;
+  background-color: crimson;
+  color: #FFF;
+}
+.app .ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 0 0 130px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #696969;
+  border: 0;
+  width: 150px;
+  height: 32px;
+  outline: 0;
+  color: #FFF;
+}
+.app div button:last-child {
+  background-color: rgb(221, 31, 31);
+  color: #FFF;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.form input:first-child {
+  flex: 2.8;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.form input:last-child {
+  flex: 1;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #9b089b;
+  border: 1px solid #9b089b;
+}
+input {
+  font-weight: bold;
 }
